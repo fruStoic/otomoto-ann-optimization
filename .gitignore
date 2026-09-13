@@ -1,0 +1,68 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# TensorFlow / Keras generated files
+*.h5
+*.keras
+*.ckpt
+checkpoints/
+
+# Logs
+*.log
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# IDE files
+.vscode/
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# LaTeX temporary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Optional: generated PDF report
+# Uncomment if you do not want the compiled PDF in Git
+# *.pdf
+
+# Local model/cache directories
+.cache/
+.keras/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
