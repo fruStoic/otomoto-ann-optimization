@@ -1,0 +1,20 @@
+FINAL SGD TEST RESULTS
+==================================================
+seed: 42
+threshold: 0.5
+epochs_run: 150
+best_epoch: 149
+accuracy: 0.807001
+precision: 0.689655
+recall: 0.498221
+f1: 0.578512
+roc_auc: 0.844682
+tn: 713
+fp: 63
+fn: 141
+tp: 140
+
+95% Wilson CI
+accuracy: 0.782115, 0.829664
+precision: 0.622987, 0.749279
+recall: 0.440180, 0.556310

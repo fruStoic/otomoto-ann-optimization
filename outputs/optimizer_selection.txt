@@ -1,0 +1,13 @@
+SELECTED OPTIMIZER
+==================================================
+SGD
+
+Selection rule:
+1. Highest mean validation F1
+2. Highest mean validation recall
+3. Highest mean validation precision
+
+SGD - Adam mean F1 difference: 0.0075
+
+Interpretation:
+SGD is the nominal winner under the predefined selection rule, but its advantage over Adam is small relative to the observed stochastic variation. Adam converges substantially faster.
