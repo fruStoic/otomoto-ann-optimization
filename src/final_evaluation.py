@@ -225,6 +225,19 @@ def main():
         verbose=1,
     )
 
+    final_eval = model.evaluate(
+        prepared.X_test,
+        prepared.y_test,
+        verbose=0,
+    )
+
+    final_test_loss = float(final_eval[0])
+
+    print(
+        f"Test binary cross-entropy loss: "
+        f"{final_test_loss:.6f}"
+    )
+
     val_loss = np.asarray(
         history.history["val_loss"]
     )
@@ -489,6 +502,11 @@ def main():
         file.write(
             f"best_epoch: "
             f"{best_epoch}\n"
+        )
+
+        file.write(
+            f"test_loss: "
+            f"{final_test_loss:.6f}\n"
         )
 
         file.write(

@@ -308,6 +308,21 @@ def main():
         verbose=1,
     )
 
+    legacy_eval = model.evaluate(
+        X_test,
+        y_test,
+        verbose=0,
+    )
+
+    legacy_test_loss = float(
+        legacy_eval[0]
+    )
+
+    print(
+        f"Test binary cross-entropy loss: "
+        f"{legacy_test_loss:.6f}"
+    )
+
     probabilities = (
         model.predict(
             X_test,
